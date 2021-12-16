@@ -1,16 +1,27 @@
+*{
+    background-color:aliceblue;
+}
+
+
+
+
 .cards {
     display: flex;
+    justify-content: center;
     flex-wrap: wrap;
     align-items: stretch;
   }
   .card {
-    flex: 0 0 200px;
+    
+    flex: 0px 0 100px;
     margin: 10px;
-    border: 1px solid #ccc;
+    border: 1px solid rgb(22, 22, 22);
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    width: 20rem;
   } 
   .card img {
-    max-width: 100%;
+    max-width:100%;
+    min-width: 100%;
   }
   .card .text {
     padding: 0 20px 20px;
