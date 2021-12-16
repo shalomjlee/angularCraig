@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-
+import {Mansion} from './houses.model'
 @Component({
   selector: 'app-houses',
   templateUrl: './houses.component.html',
@@ -12,7 +12,7 @@ export class HousesComponent implements OnInit {
 showMansions:boolean = false;
 showContemporarys:boolean = false;
 
-mansions = [
+mansions: Mansion[] = [
   {
     name: "mansion 1", 
     cost: "300",

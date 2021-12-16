@@ -1,21 +1,22 @@
-<p>houses works!</p>
-
 
 <button (click)="toggleMansions()">Mansions</button>
 <button (click)="toggleContemporarys()">Contemporaries</button>
 
-<div *ngIf="showMansions" >
-    <div class="houseDisplay" *ngFor="let mansion of mansions">
-        <h2>{{mansion.name}}</h2>
-          <img src="{{mansion.pic}}" /> 
-        <h3>price {{mansion.cost}}</h3>
+<div class="cards">
+    <div class="card" *ngIf="showMansions"  >
+        <div class="houseDisplay" *ngFor="let mansion of mansions">
+            <h2 class="text">{{mansion.name}}</h2>
+            <img src="{{mansion.pic}}" /> 
+            <h3 class="text">price {{mansion.cost}}</h3>
+        </div>
     </div>
-</div>
+    
 
-<div *ngIf="showContemporarys">
-    <div class="houseDisplay" *ngFor="let contemporary of contemporarys" >
-        <h2>{{contemporary.name}}</h2>
-        <img src="{{contemporary.pic}}" />
-        <h3>price: $ {{contemporary.cost}}K</h3> 
+    <div *ngIf="showContemporarys">
+        <div class="houseDisplay" *ngFor="let contemporary of contemporarys" >
+            <h2>{{contemporary.name}}</h2>
+            <img src="{{contemporary.pic}}" />
+            <h3>price: $ {{contemporary.cost}}K</h3> 
+        </div>
     </div>
 </div>
