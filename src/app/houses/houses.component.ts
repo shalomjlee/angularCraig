@@ -9,10 +9,10 @@ import { Component, OnInit } from '@angular/core';
 
 export class HousesComponent implements OnInit {
 
-isMansions:boolean = false;
-isContemporarys:boolean = false;
+showMansions:boolean = false;
+showContemporarys:boolean = false;
 
-mansions= [
+mansions = [
   {
     name: "mansion 1", 
     cost: "300",
@@ -48,15 +48,15 @@ mansions= [
 //   }
 // ]
 
-showMansions() {
-  this.isMansions = !this.isMansions
+toggleMansions() {
+  this.showMansions = !this.showMansions
 
 }
 
-showContemporarys() {
-  this.isMansions = false;
-  this.isContemporarys = true;
-}
+// showContemporarys() {
+//   this.isMansions = false;
+//   this.isContemporarys = true;
+// }
 
 
 

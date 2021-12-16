@@ -1,10 +1,10 @@
 <p>houses works!</p>
 
 
-<button (click)="showMansions()">Mansions</button>
-<button (click)="showContemporarys()">Contemporaries</button>
+<button (click)="toggleMansions()">Mansions</button>
+<!-- <button (click)="showContemporarys()">Contemporaries</button> -->
 
-<div>
+<div *ngIf="showMansions" >
     <div class="houseDisplay" *ngFor="let mansion of mansions">
         <h2>{{mansion.name}}</h2>
           <img src="{{mansion.pic}}" /> 
