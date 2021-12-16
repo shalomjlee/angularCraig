@@ -2,7 +2,7 @@
 
 
 <button (click)="toggleMansions()">Mansions</button>
-<!-- <button (click)="showContemporarys()">Contemporaries</button> -->
+<button (click)="toggleContemporarys()">Contemporaries</button>
 
 <div *ngIf="showMansions" >
     <div class="houseDisplay" *ngFor="let mansion of mansions">
@@ -14,9 +14,10 @@
 
 
 
-
-<!-- <div class="houseDisplay" *ngFor="let contemporary of contemporarys" >
-    <h2>{{contemporary.name}}</h2>
-    <img src="{{contemporary.pic}}" />
-    <h3>price: $ {{contemporary.cost}}K</h3> 
-</div>  -->
+<div *ngIf="showContemporarys">
+    <div class="houseDisplay" *ngFor="let contemporary of contemporarys" >
+        <h2>{{contemporary.name}}</h2>
+        <img src="{{contemporary.pic}}" />
+        <h3>price: $ {{contemporary.cost}}K</h3> 
+    </div>
+</div>

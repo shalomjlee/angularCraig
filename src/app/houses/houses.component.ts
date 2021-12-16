@@ -30,33 +30,35 @@ mansions = [
   }
 ]
 
-// contemporarys: object[] = [
-//   {
-//     name: "contemporary 1",
-//     cost: "450",
-//     pic: "https://th.bing.com/th/id/OIP.CethAvhs3gv4wS8ewFj2cQHaFA?pid=ImgDet&rs=1"
-//   },
-//   {
-//     name: "contemporary 2",
-//     cost: "500",
-//     pic: "https://th.bing.com/th/id/R.d72c5385c4d7ab7220c6e9a4eb14e010?rik=GtsljzJsNuG5Nw&riu=http%3a%2f%2fcdn.home-designing.com%2fwp-content%2fuploads%2f2015%2f02%2fgorgeous-exterior.jpg&ehk=BEzPqCrFmYFWh2nRa0Wj6IhWM1irXACAHOUTPU4BbuE%3d&risl=&pid=ImgRaw&r=0"
-//   },
-//   {
-//     name: "contemporary 3",
-//     cost: "700",
-//     pic: "https://th.bing.com/th/id/R.a61368d47e009808feb6c6adfa79eb9c?rik=IXif6z3knhFgNw&riu=http%3a%2f%2fmaricamckeel.com%2fwp-content%2fuploads%2f2017%2f11%2f09a_the-cresta-20.jpg&ehk=tQdHLDn8yRqg9PXbn9Ma2CzfcldfnHR3iJvyXTE4we8%3d&risl=&pid=ImgRaw&r=0"
-//   }
-// ]
+contemporarys = [
+  {
+    name: "contemporary 1",
+    cost: "450",
+    pic: "https://th.bing.com/th/id/OIP.CethAvhs3gv4wS8ewFj2cQHaFA?pid=ImgDet&rs=1"
+  },
+  {
+    name: "contemporary 2",
+    cost: "500",
+    pic: "https://th.bing.com/th/id/R.d72c5385c4d7ab7220c6e9a4eb14e010?rik=GtsljzJsNuG5Nw&riu=http%3a%2f%2fcdn.home-designing.com%2fwp-content%2fuploads%2f2015%2f02%2fgorgeous-exterior.jpg&ehk=BEzPqCrFmYFWh2nRa0Wj6IhWM1irXACAHOUTPU4BbuE%3d&risl=&pid=ImgRaw&r=0"
+  },
+  {
+    name: "contemporary 3",
+    cost: "700",
+    pic: "https://th.bing.com/th/id/R.a61368d47e009808feb6c6adfa79eb9c?rik=IXif6z3knhFgNw&riu=http%3a%2f%2fmaricamckeel.com%2fwp-content%2fuploads%2f2017%2f11%2f09a_the-cresta-20.jpg&ehk=tQdHLDn8yRqg9PXbn9Ma2CzfcldfnHR3iJvyXTE4we8%3d&risl=&pid=ImgRaw&r=0"
+  }
+
+]
 
 toggleMansions() {
   this.showMansions = !this.showMansions
+  this.showContemporarys=false;
 
 }
 
-// showContemporarys() {
-//   this.isMansions = false;
-//   this.isContemporarys = true;
-// }
+toggleContemporarys() {
+  this.showMansions = false;
+  this.showContemporarys = !this.showContemporarys
+}
 
 
 
