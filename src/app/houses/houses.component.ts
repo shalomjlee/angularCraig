@@ -11,7 +11,8 @@ export class HousesComponent implements OnInit {
 
 showMansions:boolean = false;
 showContemporarys:boolean = false;
-
+customButtonOne: string = "black"
+customButtonTwo: string = "black"
 mansions: Mansion[] = [
   {
     name: "mansion 1", 
@@ -52,12 +53,15 @@ contemporarys = [
 toggleMansions() {
   this.showMansions = !this.showMansions
   this.showContemporarys=false;
-
+  this.customButtonOne = "red"
+  this.customButtonTwo = "black"
 }
 
 toggleContemporarys() {
   this.showMansions = false;
   this.showContemporarys = !this.showContemporarys
+  this.customButtonTwo = "red"
+  this.customButtonOne = "black"
 }
 
 

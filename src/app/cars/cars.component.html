@@ -1,10 +1,10 @@
 <div class="buttons">
-    <button (click)="showCars()">show cars</button>
-    <button (click)="hideCars()">hide cars</button>
+    <button  (click)="showCars()" >show cars</button>
+    <button (click)="hideCars()" >hide cars</button>
 </div>
 
 
-<div class="cards">
+<div class="cards" [style.color] = "custom">
     <div class="card" *ngIf="isCars" >
         
         <h2 class="text">Chevy Silverado</h2>

@@ -9,7 +9,7 @@ export class CarsComponent implements OnInit {
 
   isCars: boolean = false;
   isNotCars: boolean = true;
-  
+  custom: string="red"
 
   constructor() { }
 
@@ -24,5 +24,6 @@ export class CarsComponent implements OnInit {
     this.isCars = false;
   }
 
+  
 
 }
