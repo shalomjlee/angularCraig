@@ -16,10 +16,6 @@ export class CarsComponent implements OnInit {
   ngOnInit(): void {
   }
 
-  // toggleCars() {
-  //   this.isCars = !this.isCars;
-  // }
-
   showCars() {
     this.isCars = true;
   }
